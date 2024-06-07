@@ -5,7 +5,7 @@ from typing import Sequence, Any, Union
 
 
 # The types of the elements of the input are not know
-def safe_first_element(lst: Sequence[Any]) -> Union[Any, NoneType]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None.__class__]:
     """ Duck typed util
     """
     if lst:

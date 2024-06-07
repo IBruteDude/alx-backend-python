@@ -2,10 +2,11 @@
 """ Duck typed Module
 """
 from typing import Sequence, Any, Union
+from types import NoneType
 
 
 # The types of the elements of the input are not know
-def safe_first_element(lst: Sequence[Any]) -> Union[Any, None.__class__]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, NoneType]:
     """ Duck typed util
     """
     if lst:

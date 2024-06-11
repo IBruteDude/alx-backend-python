@@ -2,7 +2,7 @@
 """ Module for a time measuring function
 """
 import time
-import asyncio as aio
+import asyncio
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
@@ -10,7 +10,7 @@ def measure_time(n: int, max_delay: int) -> float:
     """ Measure the running time for tasks
     """
     start = time.time()
-    aio.run(wait_n(n, max_delay))
+    asyncio.run(wait_n(n, max_delay))
     end = time.time()
     return end - start
 

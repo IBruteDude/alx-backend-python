@@ -3,9 +3,10 @@
 """
 import asyncio as aio
 import random as rd
+from typing import Coroutine
 
 
-async def wait_random(max_delay: int = 10):
+async def wait_random(max_delay: int = 10) -> float:
     """ Wait for a random period of time with upper limit
     """
     period = rd.uniform(0, max_delay)
